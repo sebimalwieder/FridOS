@@ -1,6 +1,6 @@
 <template>
 	<div class="terminal-wrapper">
-		<div ref="terminalElement" />
+		<div ref="terminalElement" class="terminal-container" />
 	</div>
 	<LazyMediaModal />
 	<LazyClickerGame v-if="clickerState.active" />
@@ -50,6 +50,7 @@ onMounted(async () => {
 			terminal.write('\r\n')
 			await commandHandler(terminal, commandBuffer)
 			commandBuffer = ''
+			terminal.scrollToBottom()
 			terminal.write(PROMPT)
 		}
 
@@ -93,6 +94,13 @@ onMounted(async () => {
   height: 100vh;
   box-sizing: border-box;
   background: var(--terminal-bg, #011627);
+  display: flex;
+  flex-direction: column;
+}
+
+.terminal-container {
+  flex: 1;
+  overflow: hidden;
 }
 
 .xterm-viewport::-webkit-scrollbar {
