@@ -7,7 +7,7 @@ FridOS gives kids their own "operating system" that feels real and exciting. Par
 ## Quick Start
 
 ```bash
-git clone https://github.com/your-username/fridos.git
+git clone https://github.com/sebimalwieder/FridOS.git
 cd fridos
 pnpm install
 pnpm dev
@@ -17,26 +17,21 @@ Open `http://localhost:3000` — your kid's terminal is ready.
 
 ## Configuration
 
-Edit `app.config.ts` to personalize FridOS for your child:
+Personalize FridOS via environment variables — no code changes needed. Copy the example file and edit:
 
-```ts
-export default defineAppConfig({
-  fridos: {
-    name: 'Luna',                    // Your kid's name
-    promptSymbol: '~>',              // Terminal prompt
-    promptColor: 'CYAN',             // MAGENTA, CYAN, GREEN, YELLOW, RED, BLUE
-    emojis: ['🦄', '🌈', '🍓'],     // Used by the number command
-    theme: {
-      background: '#011627',         // Terminal colors
-      foreground: '#d6deeb',
-      cursor: '#7e57c2',
-      fontSize: 28,
-      fontFamily: 'Monaspace Argon, monospace',
-      // ... full ANSI color palette
-    },
-  },
-});
+```bash
+cp .env.example .env
 ```
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `NUXT_PUBLIC_NAME` | `Kid` | Your kid's name |
+| `NUXT_PUBLIC_PROMPT_SYMBOL` | `>` | Terminal prompt symbol |
+| `NUXT_PUBLIC_PROMPT_COLOR` | `MAGENTA` | Prompt color (`RED`, `GREEN`, `YELLOW`, `BLUE`, `MAGENTA`, `CYAN`, `WHITE`) |
+| `NUXT_PUBLIC_WELCOME_MESSAGE` | `FridOS v{{version}} — Welcome, {{name}}!...` | Welcome message (`{{name}}` and `{{version}}` are interpolated) |
+| `NUXT_PUBLIC_EMOJIS` | `💖,🦄,🍍,🥐,...` | Comma-separated emojis for the number command |
+
+The terminal theme (colors, font size) lives in `app.config.ts` for more complex customization.
 
 ## What Kids Can Do
 

@@ -42,7 +42,7 @@ No registration step — auto-discovered by `import.meta.glob`.
 
 ### Configuration
 
-Personalizable strings (name, prompt symbol, prompt color, welcome message) live in `runtimeConfig.public` in `nuxt.config.ts` and can be overridden via `NUXT_PUBLIC_*` environment variables (see `.env.example`). Complex config (theme, emojis) lives in `app.config.ts` (Nuxt's `defineAppConfig`), accessed via `useAppConfig().fridos`. Version is read from `package.json` at build time via `runtimeConfig.public.version`.
+Personalizable values (name, prompt symbol, prompt color, welcome message, emojis) live in `runtimeConfig.public` in `nuxt.config.ts` and can be overridden via `NUXT_PUBLIC_*` environment variables (see `.env.example`). The terminal theme lives in `app.config.ts` (Nuxt's `defineAppConfig`), accessed via `useAppConfig().fridos`. Version is read from `package.json` at build time via `runtimeConfig.public.version`.
 
 ### State Management
 
