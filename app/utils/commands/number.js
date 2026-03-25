@@ -1,7 +1,7 @@
 export const number = (terminal, number) => {
 	if (!terminal) return
 
-	const emojis = useAppConfig().fridos.emojis
+	const emojis = useRuntimeConfig().public.emojis.split(',')
 	let randomEmojis = ''
 	const numberToPrint = Math.min(number, 1500)
 

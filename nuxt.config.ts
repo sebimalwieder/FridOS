@@ -9,10 +9,21 @@ export default defineNuxtConfig({
 	runtimeConfig: {
 		public: {
 			version: pkg.version,
+			name: 'Kid',
+			promptSymbol: '>',
+			promptColor: 'MAGENTA',
+			welcomeMessage: 'FridOS v{{version}} — Welcome, {{name}}! Type HELP to get started.',
+			emojis: '💖,🦄,🍍,🥐,🐢,🫐,🍓,🌈,💅,🐞,🪼,🦋',
 		},
 	},
 
 	compatibilityDate: '2024-04-03',
+
+	vite: {
+		optimizeDeps: {
+			include: ['@xterm/xterm', '@xterm/addon-fit'],
+		},
+	},
 
 	eslint: {
 		config: {

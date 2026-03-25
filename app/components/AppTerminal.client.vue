@@ -12,21 +12,21 @@ import { Terminal } from '@xterm/xterm'
 import { FitAddon } from '@xterm/addon-fit'
 import { createTerminalConfig } from '~/utils/terminal-config.js'
 
-const config = useAppConfig().fridos
-const runtimeConfig = useRuntimeConfig()
+const appConfig = useAppConfig().fridos
+const { public: publicConfig } = useRuntimeConfig()
 const audio = useAudioPlayer()
 const clickerState = useClickerGame()
 
-const promptColor = TEXT_STYLES[config.promptColor] || TEXT_STYLES.MAGENTA
-const PROMPT = `${promptColor}${config.promptSymbol}${TEXT_STYLES.NC} `
+const promptColor = TEXT_STYLES[publicConfig.promptColor] || TEXT_STYLES.MAGENTA
+const PROMPT = `${promptColor}${publicConfig.promptSymbol}${TEXT_STYLES.NC} `
 
-const version = runtimeConfig.public.version || '0.0.0'
-const welcomeMessage = config.welcomeMessage
+const version = publicConfig.version || '0.0.0'
+const welcomeMessage = publicConfig.welcomeMessage
 	.replace('{{version}}', version)
-	.replace('{{name}}', config.name)
+	.replace('{{name}}', publicConfig.name)
 
 const terminalElement = useTemplateRef('terminalElement')
-const terminal = new Terminal(createTerminalConfig(config.theme))
+const terminal = new Terminal(createTerminalConfig(appConfig.theme))
 const fitAddon = new FitAddon()
 let commandBuffer = ''
 

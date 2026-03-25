@@ -1,19 +1,5 @@
 export default defineAppConfig({
 	fridos: {
-		// Kid's name — shown in the welcome message
-		name: 'Kid',
-
-		// Welcome message template. {{name}} and {{version}} are interpolated.
-		welcomeMessage:
-      'FridOS v{{version}} — Welcome, {{name}}! Type HELP to get started.',
-
-		// Terminal prompt symbol and color (color must be a key from TEXT_STYLES)
-		promptSymbol: '>',
-		promptColor: 'MAGENTA',
-
-		// Emojis used by the `number` command
-		emojis: ['💖', '🦄', '🍍', '🥐', '🐢', '🫐', '🍓', '🌈', '💅', '🐞', '🪼', '🦋'],
-
 		// Terminal theme
 		theme: {
 			background: '#011627',
