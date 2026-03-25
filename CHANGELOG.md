@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/sebimalwieder/FridOS/compare/v1.0.0...v1.0.1) (2026-03-25)
+
+
+### Bug Fixes
+
+* lowercase Docker image name to fix ghcr.io push ([64aed88](https://github.com/sebimalwieder/FridOS/commit/64aed88b829ae4de1cf3b03eddbb75e11fb2b8a8))
+
 # 1.0.0 (2026-03-25)
 
 
