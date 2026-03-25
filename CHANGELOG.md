@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/sebimalwieder/FridOS/compare/v1.0.2...v1.0.3) (2026-03-25)
+
+
+### Bug Fixes
+
+* terminal scrolling for large output and reduce emoji limit to 512 ([efcb5d3](https://github.com/sebimalwieder/FridOS/commit/efcb5d3211f68b30e87a4f41a323b791e86ee67d))
+
 ## [1.0.2](https://github.com/sebimalwieder/FridOS/compare/v1.0.1...v1.0.2) (2026-03-25)
 
 
