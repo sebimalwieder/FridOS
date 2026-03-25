@@ -1,5 +1,9 @@
 # FridOS
 
+[![Screenshot of FridOS](docs/screenshot.png)](https://demo.fridos.app)
+
+> **[Live Demo](https://demo.fridos.app)**
+
 A kid-friendly terminal where children explore computers, learn typing, discover letters, numbers, and math — all while having a blast. Built with [Nuxt 4](https://nuxt.com), [Vue 3](https://vuejs.org), and [xterm.js](https://xtermjs.org).
 
 FridOS gives kids their own "operating system" that feels real and exciting. Parents clone the repo, personalize it for their child, and let them loose on the keyboard.

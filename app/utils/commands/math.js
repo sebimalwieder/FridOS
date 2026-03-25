@@ -21,7 +21,7 @@ export const math = (terminal, operation) => {
 						? operation.split('/').reduce((a, b) => a / b)
 						: 'Invalid operation'
 		console.log(result)
-		terminal.write(String(result))
+		terminal.writeln(String(result))
 	}
 	catch {
 		result = 'Invalid operation'

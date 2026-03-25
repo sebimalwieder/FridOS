@@ -1,6 +1,6 @@
 export const say = async (terminal, ...args) => {
 	if (!window.speechSynthesis) {
-		terminal.write('Your device does not support the SpeechSynthesis API')
+		terminal.writeln('Your device does not support the SpeechSynthesis API')
 		return
 	}
 	const stringToRead = args.join(' ')
