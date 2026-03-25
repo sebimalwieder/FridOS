@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/sebimalwieder/FridOS/compare/v1.0.1...v1.0.2) (2026-03-25)
+
+
+### Bug Fixes
+
+* use writeln consistently for command output and add demo to README ([5dcc3e7](https://github.com/sebimalwieder/FridOS/commit/5dcc3e7ff5632e01d32aacf560acc1a42172a7bc))
+
 ## [1.0.1](https://github.com/sebimalwieder/FridOS/compare/v1.0.0...v1.0.1) (2026-03-25)
 
 
