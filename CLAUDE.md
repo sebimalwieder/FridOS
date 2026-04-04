@@ -23,7 +23,8 @@ The entire UI is a single xterm.js terminal. User input flows through:
 ### Key Files
 
 - `app.config.ts` — Parent-facing configuration (kid's name, prompt, theme, emojis)
-- `app/components/Terminal.client.vue` — xterm.js wrapper; handles input, renders overlays
+- `app/components/AppTerminal.client.vue` — xterm.js wrapper; handles input, renders overlays
+- `app/components/AnalogClock.vue` — SVG analog clock overlay with animated hands and lighting effects
 - `app/utils/command-handler.js` — Auto-discovers commands via `import.meta.glob`. Special routing: single letters → alphabet, numbers → number, math expressions → math
 - `app/utils/commands/` — One file per command, auto-discovered. No registration needed.
 - `app/utils/terminal-config.js` — `createTerminalConfig(theme)` builds xterm config from app config

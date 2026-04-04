@@ -46,6 +46,7 @@ The terminal theme (colors, font size) lives in `app.config.ts` for more complex
 | Type **math** (e.g. `3+4`) | Shows the result |
 | `say hello` | Computer speaks out loud (Web Speech API) |
 | `click` | Play the clicker game |
+| `clock` | Shows an analog clock |
 | `mom` / `dad` | Shows a random photo of mom or dad |
 | `help` | Lists all available commands |
 | `clear` | Clears the screen |
