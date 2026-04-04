@@ -1,9 +1,13 @@
 <template>
 	<div class="terminal-wrapper">
-		<div ref="terminalElement" class="terminal-container" />
+		<div
+			ref="terminalElement"
+			class="terminal-container"
+		/>
 	</div>
 	<LazyMediaModal />
 	<LazyClickerGame v-if="clickerState.active" />
+	<LazyAnalogClock v-if="clockState.active" />
 	<LazyAudioPlayer v-if="audio.asset" />
 </template>
 
@@ -16,6 +20,7 @@ const appConfig = useAppConfig().fridos
 const { public: publicConfig } = useRuntimeConfig()
 const audio = useAudioPlayer()
 const clickerState = useClickerGame()
+const clockState = useAnalogClock()
 
 const promptColor = TEXT_STYLES[publicConfig.promptColor] || TEXT_STYLES.MAGENTA
 const PROMPT = `${promptColor}${publicConfig.promptSymbol}${TEXT_STYLES.NC} `
@@ -71,6 +76,7 @@ onMounted(async () => {
 		else if (string === '\u001b') {
 			clearImage()
 			clearAudio()
+			clearAnalogClock()
 			if (clickerState.value) abortClickerGame(terminal)
 		}
 
