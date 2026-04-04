@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/sebimalwieder/FridOS/compare/v1.0.3...v1.1.0) (2026-04-04)
+
+
+### Features
+
+* add analog clock command with SVG clock face and lighting effects ([2dcec54](https://github.com/sebimalwieder/FridOS/commit/2dcec54d6348072a184e04516649d54f9525e107))
+
 ## [1.0.3](https://github.com/sebimalwieder/FridOS/compare/v1.0.2...v1.0.3) (2026-03-25)
 
 
