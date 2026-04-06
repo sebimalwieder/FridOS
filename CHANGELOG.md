@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/sebimalwieder/FridOS/compare/v1.3.0...v1.3.1) (2026-04-06)
+
+
+### Bug Fixes
+
+* update favicons and title ([4ffb4a7](https://github.com/sebimalwieder/FridOS/commit/4ffb4a7083f3938a74b382294fa109b038e83c1c))
+
 # [1.3.0](https://github.com/sebimalwieder/FridOS/compare/v1.2.0...v1.3.0) (2026-04-06)
 
 
