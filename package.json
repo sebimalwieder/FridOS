@@ -33,7 +33,8 @@
     "onlyBuiltDependencies": [
       "@parcel/watcher",
       "esbuild",
-      "sharp"
+      "sharp",
+      "unrs-resolver"
     ]
   }
 }
