@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/sebimalwieder/FridOS/compare/v1.1.0...v1.2.0) (2026-04-06)
+
+
+### Features
+
+* add PWA support with offline capability and app install ([345ba28](https://github.com/sebimalwieder/FridOS/commit/345ba28e97bd7605b95c120e1a0d5d0fb83d7047))
+
 # [1.1.0](https://github.com/sebimalwieder/FridOS/compare/v1.0.3...v1.1.0) (2026-04-04)
 
 
