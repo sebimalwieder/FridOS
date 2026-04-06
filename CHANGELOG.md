@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/sebimalwieder/FridOS/compare/v1.2.0...v1.3.0) (2026-04-06)
+
+
+### Features
+
+* add page title via useHead ([f5fb0da](https://github.com/sebimalwieder/FridOS/commit/f5fb0da50e8128e9f9082c75dda30f05ef9a2238))
+
 # [1.2.0](https://github.com/sebimalwieder/FridOS/compare/v1.1.0...v1.2.0) (2026-04-06)
 
 
