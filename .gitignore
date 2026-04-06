@@ -23,5 +23,10 @@ logs
 .env.*
 !.env.example
 
+# PWA
+dev-dist
+sw.*
+workbox-*
+
 # Claude Code
 .claude/
