@@ -1,12 +1,11 @@
-FROM node:24-alpine AS builder
+FROM dhi.io/node:24-alpine3.23-dev AS builder
 RUN corepack enable
-USER node
 WORKDIR /app
-COPY --chown=node:node . .
+COPY . .
 RUN pnpm i
 RUN pnpm build
 
-FROM node:24-alpine AS runner
+FROM dhi.io/node:24-alpine3.23 AS runner
 EXPOSE 3000
 USER node
 WORKDIR /app
