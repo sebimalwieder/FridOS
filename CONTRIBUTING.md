@@ -8,12 +8,34 @@ Thanks for your interest in contributing to FridOS! This is a kid-friendly termi
 # Clone the repo
 git clone https://github.com/snoell/fridos.git
 cd fridos
+```
 
+### Local development
+
+```bash
 # Install dependencies
 pnpm install
 
 # Start the dev server
 pnpm dev
+```
+
+The app runs at `http://localhost:3000`.
+
+### Docker
+
+The Docker image is based on [Docker hardened images](https://github.com/docker-hardened-images) that require authentication to pull.  
+Login with the following command first using your Docker Hub credentials (username and [PAT](https://docs.docker.com/security/access-tokens/#create-a-personal-access-token)):
+
+```bash
+docker login dhi.io
+```
+
+Then build and start the container:
+
+```bash
+docker build -t fridos:latest -f .docker/Dockerfile .
+docker run -p 3000:3000 fridos:latest
 ```
 
 The app runs at `http://localhost:3000`.
